@@ -1,0 +1,20 @@
+README for DataScienceatScale_Assignment1
+
+---------------------
+This is the first assignment for the Data Science at Scale course called Data Manipulation at Scale: Systems and Algorithms. This is part of the Data Science at Scale Coursera specialization.
+
+problem_1_submission.txt : 20 lines of JSON output from the twitter stream. Generated with twitterstream.py > output.txt. The first 20 lines of output.txt were placed into this file.
+
+AFINN-111.txt: a provided text file containing a list of pre-computed sentiment scores. Each line in the file contains a word or phrase followed by a sentiment score.
+
+tweet_sentiment.py: prints the sentiment of each tweet in a supplied tweet file. The sentiment score for a tweet is the summed sentiment for all words in the tweet.
+
+term_sentiment.py: computes the sentiment for the terms that do not appear in the AFINN-111.txt file. Sentiment for non-sentiment carrying words is determined by the sentiment-carrying words that appear in close proximity.
+
+frequency.py: computes the frequency of terms in tweets. This is computed as [# of occurrences of the term in all tweets]/[# of occurrences of all terms in all tweets].
+
+happiest_state.py: returns the name of the happiest state as a string, given as the state with the highest average tweet sentiment. The tweet location is determined by the tweeter's location, and the dataset is cleaned to exclude tweets that are non-English or that originate from outside of the U.S.
+
+top_ten.py: computes the ten most frequently occurring hashtags
+
+
